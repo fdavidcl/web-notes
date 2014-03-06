@@ -7,6 +7,8 @@
 baseurl: /apuntes
 
 markdown: kramdown
+kramdown:
+	parse_span_html: false
 
 permalink: /:title
 paginate: 4
