@@ -10,6 +10,6 @@ permalink: /:title
 paginate: 4
 paginate_path: /p/:num
 
-nav_list:
-	Inicio: '/'
-	Archivo: '/archive'
+#nav_list:
+#	Inicio: '/'
+#	Archivo: '/archive'

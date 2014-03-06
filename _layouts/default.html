@@ -9,11 +9,6 @@
 	<body>
 		{% include header.ext %}
 
-		<aside>
-			{% for page in site.nav_list %}
-				<a href="{{ page[0] }}">{{ page[1] }}</a>
-			{% endfor %}
-		</aside>
 		{{ content }}
 		{% include footer.ext %}
 	</body>
