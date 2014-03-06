@@ -15,5 +15,5 @@ paginate: 4
 paginate_path: p/:num
 
 #nav_list:
-#	Inicio: '/'
-#	Archivo: '/archive'
+# Inicio: '/'
+# Archivo: '/archive'
