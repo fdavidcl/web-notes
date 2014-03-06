@@ -4,11 +4,11 @@
 # pygments: true
 
 # Settings
-baseurl: /apuntes
+baseurl: /apuntes/
 markdown: maruku
-permalink: /:title
+permalink: :title
 paginate: 4
-paginate_path: /p/:num
+paginate_path: p/:num
 
 #nav_list:
 #	Inicio: '/'

@@ -2,13 +2,16 @@
 <html>
 	<head>
 		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-		<script type="text/javascript" src="/js/mdtex.js"></script>
+		<script type="text/javascript">
+			window.addEventListener("load", function() {
+				MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.querySelector("body")]);
+			});
+		</script>
 		<link rel="stylesheet" type="text/css" href="/css/default.css">
 		<title>{{ page.title }}</title>
 	</head>
 	<body>
 		{% include header.ext %}
-
 		{{ content }}
 		{% include footer.ext %}
 	</body>

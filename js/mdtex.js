@@ -1,5 +1,3 @@
-var BASE_URL = "https://raw.github.com/NCordon/Algoritmia" //...
-
 var ajax_get = function(url, callback) {
 	if (window.XMLHttpRequest) {
 		var xmlhttp = new XMLHttpRequest();
