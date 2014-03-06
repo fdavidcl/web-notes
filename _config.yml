@@ -1,0 +1,14 @@
+# Github defaults
+safe: true
+lsi: false
+pygments: true
+
+# Settings
+markdown: maruku
+permalink: /:title
+paginate: 4
+paginate_path: /p/:num
+
+nav_list:
+	Inicio: '/'
+	Archivo: '/archive'
