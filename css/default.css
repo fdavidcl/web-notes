@@ -9,8 +9,8 @@ header, article, nav, footer {
 	margin: 0 auto;
 	padding: 2%;
 	width: 92%;
-	max-width: 960px;
-	min-width: 300px;
+	amax-width: 960px;
+	amin-width: 300px;
 }
 
 header h1 {
