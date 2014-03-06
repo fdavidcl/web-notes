@@ -1,1 +1,1 @@
-<header><h1>Apuntes</h1></header>
+<header><a href="{{ site.baseurl }}"><h1>Apuntes</h1></a></header>

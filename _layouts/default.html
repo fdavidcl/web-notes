@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
 		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 		<script type="text/javascript">
+			WebFont.load({
+				google: {
+					families: ["PT Sans", "PT Serif"]
+				}
+			});
+		</script>
+		<!--script type="text/javascript">
 			window.addEventListener("load", function() {
 				MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.querySelector("body")]);
 			});
-		</script>
+		</script-->
 		<link rel="stylesheet" type="text/css" href="/css/default.css">
 		<title>{{ page.title }}</title>
 	</head>
