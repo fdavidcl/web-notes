@@ -1,7 +1,7 @@
-# Github defaults
-safe: true
-lsi: false
-pygments: true
+# Github defaults:
+# safe: true
+# lsi: false
+# pygments: true
 
 # Settings
 baseurl: /apuntes
