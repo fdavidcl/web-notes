@@ -43,6 +43,8 @@ para fórmulas en línea. Para fórmulas centradas usaremos:
 
     `$$f: \mathbb{N} \rightarrow \mathbb{R} $$`
 
+¡Importantes los *backticks* `` ` ``!
+
 #### Ejemplo
 
 Sea `$f:\mathbb{N}\rightarrow\mathbb{R}$`, se verifica `$$f(n) \in O(g(n)) 
