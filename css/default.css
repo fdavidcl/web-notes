@@ -32,8 +32,16 @@ a {
 	color: inherit;
 }
 
+dd dt {
+	font-weight: bold;
+}
+
 code.hljs {
 	background: #f6f6f6;
 	border: 1px solid #d0d0d0;
 	overflow-x: auto;
+}
+div.footnotes {
+	margin: 0.6em 0 0;
+	border-top: 1px solid #c0c0c0;
 }

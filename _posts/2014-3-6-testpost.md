@@ -35,7 +35,7 @@ y el resto de [la sintaxis](http://kramdown.gettalong.org/syntax.html).
 ### Probando MathJax
 
 Para escribir código `$\LaTeX$` y que sea interpretado por MathJax, lo englobaremos de 
-esta forma: `\`$`...código...`$\`` para fórmulas en línea y `\`$$`...código...`$$\`` para
+esta forma: ` ``$`...código...`$`` ` para fórmulas en línea y ` ``$$`...código...`$$`` ` para
 fórmulas centradas.
 
 #### Ejemplo
