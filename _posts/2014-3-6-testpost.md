@@ -1,4 +1,5 @@
 ---
+layout: chapter
 title: Un post de prueba
 ---
 
