@@ -35,12 +35,12 @@ y el resto de [la sintaxis](http://kramdown.gettalong.org/syntax.html).
 ### Probando MathJax
 
 Para escribir código `$\LaTeX$` y que sea interpretado por MathJax, lo englobaremos de 
-esta forma: ` ``$`...código...`$`` ` para fórmulas en línea y ` ``$$`...código...`$$`` ` para
+esta forma: `` `$`...código...`$` `` para fórmulas en línea y `` `$$`...código...`$$` `` para
 fórmulas centradas.
 
 #### Ejemplo
 
-Sea $f:\mathbb{N}\rightarrow\mathbb{R}$, se verifica `$$f(n) \in O(g(n)) 
+Sea `$f:\mathbb{N}\rightarrow\mathbb{R}$`, se verifica `$$f(n) \in O(g(n)) 
 \Leftrightarrow \exists k \in \mathbb{N} \exists c \in \mathbb{R}^{+} : f(n) \leq 
 c\times g(n) \forall n \geq k$$`
 
