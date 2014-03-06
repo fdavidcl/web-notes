@@ -12,12 +12,11 @@ Voy a complicarle la vida a MD/MathJax: \\(a_{ij}\times b_{ji}\\) \\(1*2*3*4*5\\
 ### Probando highlight.js
 
 Tal vez algo de código:
-~~~
-var preorder = function(call_each, node) {
-	call_each(node.key());
 
-	for (var c = 0; c < node.numChildren(); c++) {
-		preorder(call_each, node.child(c));
-	}
-}
-~~~
+    var preorder = function(call_each, node) {
+        call_each(node.key());
+
+        for (var c = 0; c < node.numChildren(); c++) {
+            preorder(call_each, node.child(c));
+        }
+    }
