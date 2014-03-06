@@ -6,9 +6,9 @@
 # Settings
 url: http://fdavidcl.github.io/apuntes/
 markdown: maruku
-permalink: :title
+permalink: /apuntes/:title
 paginate: 4
-paginate_path: p/:num
+paginate_path: /apuntes/p/:num
 
 #nav_list:
 #	Inicio: '/'
