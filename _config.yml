@@ -4,6 +4,7 @@ lsi: false
 pygments: true
 
 # Settings
+baseurl: /apuntes
 markdown: maruku
 permalink: /:title
 paginate: 4

@@ -4,15 +4,16 @@
 		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 		<script type="text/javascript" src="/js/mdtex.js"></script>
 		<link rel="stylesheet" type="text/css" href="/css/default.css">
+		<title>{{ page.title }}</title>
 	</head>
 	<body>
 		{% include header.ext %}
 
-		<nav>
+		<aside>
 			{% for page in site.nav_list %}
 				<a href="{{ page[0] }}">{{ page[1] }}</a>
 			{% endfor %}
-		</nav>
+		</aside>
 		{{ content }}
 		{% include footer.ext %}
 	</body>
