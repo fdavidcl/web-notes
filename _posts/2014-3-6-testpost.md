@@ -9,7 +9,7 @@ Sea \\(f(n)\\) una función para un *post de prueba*, se verifica $$f(n) \in O(g
 
 Voy a complicarle la vida a MD/MathJax: \\(a\_{ij}\times b\_{ji}\\) \\(1\*2\*3\*4\*5\\)
 
-<span>$$a_{ij}\times b_{ij}; 1*2*3*4*5</span>
+<span>$$a_{ij}\times b_{ij}; 1*2*3*4*5$$</span>
 
 ### Probando highlight.js
 
