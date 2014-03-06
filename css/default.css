@@ -1,0 +1,13 @@
+body {
+	font-family: PT Serif, 'PT Serif', serif;
+	background: #e0e0e0;
+}
+
+header, article, footer {
+	background: #fff;
+	margin: 0 auto;
+	padding: 2%;
+	width: 92%;
+	max-width: 960px;
+	min-width: 300px;
+}
