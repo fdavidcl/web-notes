@@ -4,7 +4,7 @@
 # pygments: true
 
 # Settings
-baseurl: /apuntes/
+url: http://fdavidcl.github.io/apuntes/
 markdown: maruku
 permalink: :title
 paginate: 4
