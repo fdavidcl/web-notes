@@ -5,7 +5,9 @@
 
 # Settings
 baseurl: /apuntes
+
 markdown: kramdown
+
 permalink: /:title
 paginate: 4
 paginate_path: p/:num
