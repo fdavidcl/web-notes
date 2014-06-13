@@ -8,7 +8,7 @@ title: Resúmenes/Esquemas de análisis
 ## 2. Medidas de Lebesgue en `$\mathbb{R}^N$`
 
 Teorema
-: Sea $G$ abierto de $\mathbb{R}^N$. Entonces `$\exists \{Q_n\}$` cubos diádicos
+: Sea $G$ **abierto** de $\mathbb{R}^N$. Entonces `$\exists \{Q_n\}$` cubos diádicos
 tales que `$G=\bigcup\limits_{n}Q_n$` y `$\overline{Q_n}\subseteq G \forall n \in \mathbb{N}$`.
 
 Corolario
@@ -20,7 +20,7 @@ Proposición (regularidad de la medida exterior)
 `$A\subseteq B, \lambda^*(A) = \lambda^*(B)$`.
 
 Proposición
-: Sea $\mu^*$ una medida exterior sobre $\Omega$. Entonces, sea
+: Sea $\mu^*$ una **medida exterior** sobre $\Omega$. Entonces, sea
 `$$ \mathcal{C} = \{ E \subseteq \Omega : \mu^*(A) = \mu^*(A\cap E) + \mu^*(A \cap E^c) \forall A \subseteq \Omega\}$$`
 tenemos que $\mathcal{C}$ es una $\sigma$-álgebra, y `$\mu^*_{|\mathcal{C}}$` es una medida.
 
@@ -32,16 +32,16 @@ Teorema (de existencia y unicidad de la medida de Lebesgue)
   3. $M$ es la mayor $\sigma$-álgebra tal que $\lambda$ es aditiva.
 
 Teorema (caracterización de la medida de Lebesgue)
-: 1. Si $\mu$ es otra medida en $M$ invariante por traslaciones tal que $\mu([0,1]^N)=\alpha < \infty$,
+: 1. Si $\mu$ es otra medida en $M$ **invariante por traslaciones** tal que $\mu([0,1]^N)=\alpha < \infty$,
      entonces $\mu = \alpha \lambda$.
   2. $\lambda$ es la única medida en M invariante por traslaciones que verifica $\lambda([0,1]^N)=1$.
 
 Teorema (relación de aplicaciones lineales con la medida de Lebesgue)
-: Sea $T: \mathbb{R}^N \rightarrow \mathbb{R}^N$ una aplicación lineal y sea $E\in M$. Entonces
+: Sea $T: \mathbb{R}^N \rightarrow \mathbb{R}^N$ una aplicación **lineal** y sea $E\in M$. Entonces
   $T(E) \in M$ y $\lambda(T(E))=|det(T)| \lambda(E)$
 
 Teorema (relación de la medida de Lebesgue con las funciones `$\mathcal{C}^1$`)
-: $G \subseteq \mathbb{R}^N$ abierto, sea $f \in \mathcal{C}^1(G), f: G \rightarrow \mathbb{R}^N$. Entonces,
+: $G \subseteq \mathbb{R}^N$ **abierto**, sea $\mathbf{f \in \mathcal{C}^1(G)}, f: G \rightarrow \mathbb{R}^N$. Entonces,
 
     1. $Z \subseteq G, \lambda(Z) = 0 \Rightarrow \lambda(f(Z)) = 0$.
     2. $E\in M, E \subseteq G \Rightarrow f(E) \in M$
@@ -78,12 +78,12 @@ Proposición (estabilidad analítica)
 
 Teorema (de aproximación de Lebesgue)
 : Sea $(\Omega, \mathcal{A})$ espacio medible y sea $f: \Omega \rightarrow [0,+\infty[$
-  medible. Entonces, `$\exists \{s_n\}$` funciones simples con `$\{s_n\} \rightarrow f$` (puntual).
-  Si además $f$ está acotada, entonces `$\{s_n\} \rightarrow f$` (uniforme).
+  **medible**. Entonces, `$\exists \{s_n\}$` funciones **simples** con `$\{s_n\} \rightarrow f$` (puntual).
+  Si además $f$ está **acotada**, entonces `$\{s_n\} \rightarrow f$` (uniforme).
 
 Teorema (de la convergencia creciente para funciones medibles positivas)
 : Sea $E \subseteq \mathbb{R}^N$ medible y `$\{f_n\}\uparrow f$` (puntual) con
-  `$f_n, f:E\rightarrow [0,+\infty[$` medibles. Entonces
+  `$f_n, f:E\rightarrow \mathbf{[0,+\infty[}$` **medibles**. Entonces
   `$\int_E f = \lim\limits_{n\rightarrow +\infty} \int_E f_n$`.
 
 Teorema/Corolario
@@ -104,3 +104,15 @@ Corolario (funciones integrables)
   * `$\sum\limits_{n\ge 1} \int_{E_n}|f| < \infty$`
 
   En tal caso, `$\int_E f = \sum\limits_{n=1}^{+\infty} \int_{E_n} f$`
+
+## 4. Teoremas de convergencia
+
+Teorema (de la convergencia monótona)
+: $E \subseteq \mathbb{R}^N$ medible y sea `${f_n}$` una sucesión **monótona** de
+  funciones integrables en $E$. Supongamos que `${\int_E f_n}$` está **acotada**. Entonces,
+  `$\exists f: E \rightarrow\mathbb{R}$` integrable tal que `${f_n}\rightarrow f$` (cpd, en $E$)
+  y `$\lim \int_E f_n = \int_E f`.
+
+## 5. Técnicas de integración en una variable
+
+## 6. Técnicas de integración en varias variables
