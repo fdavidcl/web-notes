@@ -3,6 +3,8 @@ layout: chapter
 title: Resúmenes/Esquemas de análisis
 ---
 
+<style>dt{color:#333;margin-top:0.8em;}</style>
+
 ## 1. Sucesiones y series funcionales. Series de potencias
 
 ## 2. Medidas de Lebesgue en `$\mathbb{R}^N$`
@@ -112,6 +114,35 @@ Teorema (de la convergencia monótona)
   funciones integrables en $E$. Supongamos que `${\int_E f_n}$` está **acotada**. Entonces,
   `$\exists f: E \rightarrow\mathbb{R}$` integrable tal que `${f_n}\rightarrow f$` (cpd, en $E$)
   y `$\lim \int_E f_n = \int_E f`.
+
+Lema (de Fatou)
+: $E \subseteq \mathbb{R}^N$ medible y `$f_n: E\rightarrow [0,+\infty[$` medibles, y supongamos
+  `$\liminf \int_E f_n < \infty$`. Entonces, `$\liminf f_n$` es finito cpd y
+  `$\int_E \liminf f_n \le \liminf \int_E f_n$`.
+
+Teorema (de la convergencia dominada)
+: $E \subseteq \mathbb{R}^N$ medible y sea `${f_n}$` una sucesión de
+  funciones integrables en $E$. Supongamos que `$\{f_n\}\rightarrow f$` (puntual),
+  y `$\exists g \in L_E : |f|\le g$`. Entonces `$f\in L_E$` y `$\lim_n\int_E |f-f_n|=0$`.
+
+Consecuencia
+: `$\lim\int f_n = \int \lim f_n$
+
+Teorema (de la convergencia absoluta)
+: $E \subseteq \mathbb{R}^N$ medible y sea `${f_n}$` una sucesión de
+  funciones integrables en $E$. Supongamos que `$\sum\limits_{n=1}^{+\infty}\int_E|f_n|<\infty$`.
+  Entonces `$\sum\limits{n\ge 1} f_n$` converge absolutamente casi por doquier en E,
+  `$\lim_n\int_E |\sum\limits_{k=n}^{+\infty} f_k| = 0$`. En consecuencia,
+  `$\int_E \sum\limits_{n=1}^{+\infty} f_n = \sum\limits_{n=1}^{+\infty} \int_E f_n$`.
+
+Teorema (de Riesz)
+: Para $E \subseteq \mathbb{R}^N$ medible, `$\mathcal{L}_E^1$` es un espacio de Banach.
+
+Teorema (de Lebesgue de la caracterización de las funciones integrables de Riemann)
+: `$f:[a,b]\rightarrow \mathbb{R}$` **acotada**. Entonces $f$ es Riemann-integrable en
+  $[a,b]\Leftrightarrow f$ es continua cpd.
+
+  En tal caso, `$\int_a^b f = \int_{[a,b]} f$`.
 
 ## 5. Técnicas de integración en una variable
 
