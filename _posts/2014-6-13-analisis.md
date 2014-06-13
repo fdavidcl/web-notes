@@ -63,7 +63,7 @@ Proposición (estabilidad algebraica)
   1. $\alpha f$ es medible
   1. $f g$ es medible
   1. $g(x) \ne 0 \forall x \in \Omega \Rightarrow \frac{f}{g}$ es medible
-  1. $f \wedge g, f \vee g, f^+ = f \vee 0, f^- = -f \vee 0, |f|$ son medibles
+  1. `$f \wedge g, f \vee g, f^+ = f \vee 0, f^- = -f \vee 0, |f|$` son medibles
 
 Proposición (estabilidad analítica)
 : Sea $(\Omega, \mathcal{A})$ espacio de medida, sean $f_n:(\Omega, \mathcal{A}) \rightarrow (\mathbb{R}, \mathcal{B})$
@@ -73,8 +73,8 @@ Proposición (estabilidad analítica)
   1. $E = \{ x \in \Omega : \{f_n(x)\} minorado\}$ es medible
   1. $F_1 = \{ x \in \Omega : \limsup f_n(x) \in \mathbb{R}\}$ es medible
   1. $F_2 = \{ x \in \Omega : \liminf f_n(x) \in \mathbb{R}\}$ es medible
-  1. $F = \{ x \in \Omega : \lim f_n(x) \in \mathbb{R}\}, \tilde{f}(x) = \lim\limits_n f_n(x)$ son medibles
-  1. $G = \{ x \in \Omega : \sum\limits_{n\ge 1} f_n(x) converge\}, \tilde{f}(x) = \sum\limits_{n= 1}^{\infty} f_n(x)$ son medibles
+  1. `$F = \{ x \in \Omega : \lim f_n(x) \in \mathbb{R}\}, \tilde{f}(x) = \lim\limits_n f_n(x)$` son medibles
+  1. `$G = \{ x \in \Omega : \sum\limits_{n\ge 1} f_n(x) converge\}, \tilde{f}(x) = \sum\limits_{n= 1}^{\infty} f_n(x)$` son medibles
 
 Teorema (de aproximación de Lebesgue)
 : Sea $(\Omega, \mathcal{A})$ espacio medible y sea $f: \Omega \rightarrow [0,+\infty[$
