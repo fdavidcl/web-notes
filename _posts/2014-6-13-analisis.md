@@ -31,7 +31,7 @@ Teorema (de existencia y unicidad de la medida de Lebesgue)
      $M$ que verifica esto.
   3. $M$ es la mayor $\sigma$-álgebra tal que $\lambda$ es aditiva.
 
-Teorema (caraacterización de la medida de Lebesgue)
+Teorema (caracterización de la medida de Lebesgue)
 : 1. Si $\mu$ es otra medida en $M$ invariante por traslaciones tal que $\mu([0,1]^N)=\alpha < \infty$,
      entonces $\mu = \alpha \lambda$.
   2. $\lambda$ es la única medida en M invariante por traslaciones que verifica $\lambda([0,1]^N)=1$.
@@ -51,3 +51,56 @@ Teorema (relación con el producto cartesiano)
 
     1. $E\times F$ es medible en $\mathbb{R}^{N+M}$.
     2. $\lambda(E\times F) = \lambda(E)\lambda(F)$.
+
+
+## 3. Funciones medibles
+
+Proposición (estabilidad algebraica)
+: Sea $(\Omega, \mathcal{A})$ espacio de medida, sean $f,g:\Omega \rightarrow \mathbb{R}$
+  medibles, $\alpha\in\mathbb{R}$. Entonces:
+
+  1. $f+g$ es medible
+  1. $\alpha f$ es medible
+  1. $f g$ es medible
+  1. $g(x) \ne 0 \forall x \in \Omega \Rightarrow \frac{f}{g}$ es medible
+  1. $f \wedge g, f \vee g, f^+ = f \vee 0, f^- = -f \vee 0, |f|$ son medibles
+
+Proposición (estabilidad analítica)
+: Sea $(\Omega, \mathcal{A})$ espacio de medida, sean $f_n:(\Omega, \mathcal{A}) \rightarrow (\mathbb{R}, \mathcal{B})$
+  medibles. Entonces,
+
+  1. $E = \{ x \in \Omega : \{f_n(x)\} mayorado\}$ es medible
+  1. $E = \{ x \in \Omega : \{f_n(x)\} minorado\}$ es medible
+  1. $F_1 = \{ x \in \Omega : \limsup f_n(x) \in \mathbb{R}\}$ es medible
+  1. $F_2 = \{ x \in \Omega : \liminf f_n(x) \in \mathbb{R}\}$ es medible
+  1. $F = \{ x \in \Omega : \lim f_n(x) \in \mathbb{R}\}, \tilde{f}(x) = \lim\limits_n f_n(x)$ son medibles
+  1. $G = \{ x \in \Omega : \sum\limits_{n\ge 1} f_n(x) converge\}, \tilde{f}(x) = \sum\limits_{n= 1}^{\infty} f_n(x)$ son medibles
+
+Teorema (de aproximación de Lebesgue)
+: Sea $(\Omega, \mathcal{A})$ espacio medible y sea $f: \Omega \rightarrow [0,+\infty[$
+  medible. Entonces, `$\exists \{s_n\}$` funciones simples con `$\{s_n\} \rightarrow f$` (puntual).
+  Si además $f$ está acotada, entonces `$\{s_n\} \rightarrow f$` (uniforme).
+
+Teorema (de la convergencia creciente para funciones medibles positivas)
+: Sea $E \subseteq \mathbb{R}^N$ medible y `$\{f_n\}\uparrow f$` (puntual) con
+  `$f_n, f:E\rightarrow [0,+\infty[$` medibles. Entonces
+  `$\int_E f = \lim\limits_{n\rightarrow +\infty} \int_E f_n$`.
+
+Teorema/Corolario
+: Sea $E \in M, f: E \rightarrow [0,+\infty[$ medible. Entonces existe una sucesión
+  `$\{s_n\}\uparrow f$` (puntual) con `$s_n$` simple $\forall n \in \mathbb{N}$
+  y `$\int_E f = \lim\limits_{n\rightarrow +\infty} \int_E s_n$`.
+
+Corolario
+: Sea $E \in M, f: E \rightarrow [0,+\infty[$ medible. Sea `$\{E_n:n\in\mathbb{N}\}, E_n\in M$`
+  con `$E_n\cap E_m = \varnothing (n\ne m)$`. Entonces, `$\int_{\cup E_n} f = \sum\limits_{n=1}^{+\infty} \int_{E_n} f$`
+
+Corolario (funciones integrables)
+: $E \in M, f: E \rightarrow \mathbb{R}$ medible. `$\{E_n : n\in \mathbb{N}\}, E_n \cap E_m = \varnothing (m\ne n)$`
+  con `$E_n \in M$`. Entonces $f$ es integrable en $\cup E_n \Leftrightarrow$ se verifican:
+
+  * `$E=\bigcup_{n=1}^{+\infty} E_n$`
+  * $f$ es integrable en cada $E_n$
+  * `$\sum\limits_{n\ge 1} \int_{E_n}|f| < \infty$`
+
+  En tal caso, `$\int_E f = \sum\limits_{n=1}^{+\infty} \int_{E_n} f$`
