@@ -4,7 +4,7 @@ title: Instrucciones
 ---
 
 ### Probando kramdown
-[kramdown](http://kramdown.gettalong.org/quickref.html) es el procesador de Markdown que 
+[kramdown](http://kramdown.gettalong.org/quickref.html) es el procesador de Markdown que
 [Jekyll](http://jekyllrb.com) utiliza para convertir los archivos *.md* en código HTML
 
 *[HTML]: Hyper Text Markup Language
@@ -28,13 +28,13 @@ diferenciales de algo material o inmaterial[^1].
 
 [^1]: [RAE](http://lema.rae.es/drae/?val=definici%C3%B3n)
 
-Podéis consultar [el código que genera esto](https://github.com/fdavidcl/apuntes/raw/gh-pages/_posts/2014-3-6-testpost.md), 
+Podéis consultar [el código que genera esto](https://github.com/fdavidcl/apuntes/raw/gh-pages/_posts/2014-3-6-testpost.md),
 y el resto de [la sintaxis](http://kramdown.gettalong.org/syntax.html).
 
 
 ### Probando MathJax
 
-Para escribir código `$\LaTeX$` y que sea interpretado por MathJax, lo englobaremos de 
+Para escribir código `$\LaTeX$` y que sea interpretado por MathJax, lo englobaremos de
 esta forma:
 
     `$f: \mathbb{N} \rightarrow \mathbb{R} $`
@@ -47,17 +47,19 @@ para fórmulas en línea. Para fórmulas centradas usaremos:
 
 #### Ejemplo
 
-Sea `$f:\mathbb{N}\rightarrow\mathbb{R}$`, se verifica `$$f(n) \in O(g(n)) 
-\Leftrightarrow \exists k \in \mathbb{N} \exists c \in \mathbb{R}^{+} : f(n) \leq 
+Sea `$f:\mathbb{N}\rightarrow\mathbb{R}$`, se verifica `$$f(n) \in O(g(n))
+\Leftrightarrow \exists k \in \mathbb{N} \exists c \in \mathbb{R}^{+} : f(n) \leq
 c\times g(n) \forall n \geq k$$`
 
 Voy a complicarle la vida a MathJax: `$a_{ij}\times b_{ji};\ 1*2*3*4*5$`
 
 ### Probando highlight.js
 
-Para escribir código lo indentamos a 4 espacios. Usamos [Highlight.js](http://highlightjs.org) 
+Para escribir código lo indentamos a 4 espacios. Usamos [Highlight.js](http://highlightjs.org)
 que interpreta automáticamente el lenguaje y resalta el código. Para separar dos bloques de
 código consecutivos usamos el marcador `^`.
+
+Hola, soy Rafa!
 
 #### Ejemplo
 
