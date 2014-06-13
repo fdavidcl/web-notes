@@ -42,10 +42,12 @@ Teorema (relación de aplicaciones lineales con la medida de Lebesgue)
 
 Teorema (relación de la medida de Lebesgue con las funciones `$\mathcal{C}^1$`)
 : $G \subseteq \mathbb{R}^N$ abierto, sea $f \in \mathcal{C}^1(G), f: G \rightarrow \mathbb{R}^N$. Entonces,
+
     1. $Z \subseteq G, \lambda(Z) = 0 \Rightarrow \lambda(f(Z)) = 0$.
     2. $E\in M, E \subseteq G \Rightarrow f(E) \in M$
 
 Teorema (relación con el producto cartesiano)
 : $E$ medible en $\mathbb{R}^N$, $F$ medible en $\mathbb{R}^M$. Entonces,
+
     1. $E\times F$ es medible en $\mathbb{R}^{N+M}$.
     2. $\lambda(E\times F) = \lambda(E)\lambda(F)$.
