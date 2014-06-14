@@ -80,7 +80,7 @@ Proposición (estabilidad analítica)
 
 Teorema (de aproximación de Lebesgue)
 : Sea $(\Omega, \mathcal{A})$ espacio medible y sea $f: \Omega \rightarrow [0,+\infty[$
-  **medible**. Entonces, `$\exists \{s_n\}$` funciones **simples** con `$\{s_n\} \rightarrow f$` (puntual).
+  **medible**. Entonces, `$\exists \{s_n\}$` sucesión creciente de funciones **simples** con `$\{s_n\} \rightarrow f$` (puntual).
   Si además $f$ está **acotada**, entonces `$\{s_n\} \rightarrow f$` (uniforme).
 
 Teorema (de la convergencia creciente para funciones medibles positivas)
@@ -113,7 +113,7 @@ Teorema (de la convergencia monótona)
 : $E \subseteq \mathbb{R}^N$ medible y sea `${f_n}$` una sucesión **monótona** de
   funciones integrables en $E$. Supongamos que `${\int_E f_n}$` está **acotada**. Entonces,
   `$\exists f: E \rightarrow\mathbb{R}$` integrable tal que `${f_n}\rightarrow f$` (cpd, en $E$)
-  y `$\lim \int_E f_n = \int_E f`.
+  y `$\lim \int_E f_n = \int_E f$`.
 
 Lema (de Fatou)
 : $E \subseteq \mathbb{R}^N$ medible y `$f_n: E\rightarrow [0,+\infty[$` medibles, y supongamos
@@ -145,5 +145,33 @@ Teorema (de Lebesgue de la caracterización de las funciones integrables de Riem
   En tal caso, `$\int_a^b f = \int_{[a,b]} f$`.
 
 ## 5. Técnicas de integración en una variable
+
+Teorema (fundamental del Cálculo)
+: Sea $f$ localmente integrable en $]\alpha,\beta[$, $a\in ]\alpha,\beta[$,
+  $F(x) = \int_a^x f(t)dt$. Entonces,
+
+  1. $F$ es continua en $]\alpha,\beta[$.
+  1. $f$ es continua en $b \in ]\alpha,\beta[ \Rightarrow F$ es derivable en $b$
+     y $F'(b) = f(b)$
+  1. $F$ es derivable cpd.
+
+Regla de Barrow (para integrales de Lebesgue)
+: $f:]\alpha,\beta[\rightarrow\mathbb{R}$ localmente acotada y sea $G$ primitiva de $f$. Entonces,
+
+  1. $f$ es medible en $]\alpha,\beta[$.
+  1. $f$ integrable en `$]\alpha,\beta[\Rightarrow\int_\alpha^\beta f =\lim\limits_{x\rightarrow \beta} G(x) - \lim\limits_{x\rightarrow \alpha} G(x)$`
+  1. $f\ge 0$ y `$\exists \lim\limits_{x\rightarrow \beta} G(x), \lim\limits_{x\rightarrow \alpha} G(x)\Rightarrow f$`
+     integrable.
+
+Teorema (del cammbio de variable)
+: Sean $-\infty \le \alpha < \beta \le +\infty, -\infty \le a < b \le +\infty, \phi: ]a,b[\rightarrow ]\alpha,\beta[$
+  sobreyectiva y derivable con $\phi'(x) \ne 0 \forall x \in ]a,b[$, y $f:]\alpha,\beta[\rightarrow \mathbb{R}$
+  medible. Entonces, `$f\in L_{]\alpha,\beta[}\Leftrightarrow (f\circ \phi) \phi' \in L_{]\alpha,\beta[}$; y en tal caso,
+  `$ \int_\alpha^\beta f = \int_{\phi^{-1}(\alpha^+)}^{\phi^{-1}(\beta^-)} (f\circ \phi)\phi'$`
+
+Corolario (teorema de integración por partes)
+: $u,v:]\alpha,\beta[\rightarrow\mathbb{R}$ derivables y supongamos $u'v,v'u$ integrables
+  en $]\alpha,\beta[$. Entonces,
+  `$$\int_\alpha^\beta uv' = [uv]\limits_{\alpha^+}^{\beta^-} - \int_\alpha^\beta u'v$$`
 
 ## 6. Técnicas de integración en varias variables
