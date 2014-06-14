@@ -163,15 +163,15 @@ Regla de Barrow (para integrales de Lebesgue)
   1. $f\ge 0$ y `$\exists \lim\limits_{x\rightarrow \beta} G(x), \lim\limits_{x\rightarrow \alpha} G(x)\Rightarrow f$`
      integrable.
 
-Teorema (del cammbio de variable)
+Teorema (del cambio de variable)
 : Sean $-\infty \le \alpha < \beta \le +\infty, -\infty \le a < b \le +\infty, \phi: ]a,b[\rightarrow ]\alpha,\beta[$
   sobreyectiva y derivable con $\phi'(x) \ne 0 \forall x \in ]a,b[$, y $f:]\alpha,\beta[\rightarrow \mathbb{R}$
-  medible. Entonces, `$f\in L_{]\alpha,\beta[}\Leftrightarrow (f\circ \phi) \phi' \in L_{]\alpha,\beta[}$; y en tal caso,
+  medible. Entonces, `$f\in L_{]\alpha,\beta[}\Leftrightarrow (f\circ \phi) \phi' \in L_{]\alpha,\beta[}$`; y en tal caso,
   `$ \int_\alpha^\beta f = \int_{\phi^{-1}(\alpha^+)}^{\phi^{-1}(\beta^-)} (f\circ \phi)\phi'$`
 
 Corolario (teorema de integración por partes)
 : $u,v:]\alpha,\beta[\rightarrow\mathbb{R}$ derivables y supongamos $u'v,v'u$ integrables
   en $]\alpha,\beta[$. Entonces,
-  `$$\int_\alpha^\beta uv' = [uv]\limits_{\alpha^+}^{\beta^-} - \int_\alpha^\beta u'v$$`
+  `$$\int_\alpha^\beta uv' = [uv]_{\alpha^+}^{\beta^-} - \int_\alpha^\beta u'v$$`
 
 ## 6. Técnicas de integración en varias variables
