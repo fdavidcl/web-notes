@@ -34,7 +34,7 @@ y el resto de [la sintaxis](http://kramdown.gettalong.org/syntax.html).
 
 ### Probando MathJax
 
-Para escribir código `$\LaTeX$` y que sea interpretado por MathJax, lo englobaremos de
+Para escribir código $$\LaTeX$$ y que sea interpretado por MathJax, lo englobaremos de
 esta forma:
 
     `$f: \mathbb{N} \rightarrow \mathbb{R} $`
@@ -47,11 +47,11 @@ para fórmulas en línea. Para fórmulas centradas usaremos:
 
 #### Ejemplo
 
-Sea `$f:\mathbb{N}\rightarrow\mathbb{R}$`, se verifica `$$f(n) \in O(g(n))
+Sea $$f:\mathbb{N}\rightarrow\mathbb{R}$$, se verifica $$f(n) \in O(g(n))
 \Leftrightarrow \exists k \in \mathbb{N} \exists c \in \mathbb{R}^{+} : f(n) \leq
-c\times g(n) \forall n \geq k$$`
+c\times g(n) \forall n \geq k$$
 
-Voy a complicarle la vida a MathJax: `$a_{ij}\times b_{ji};\ 1*2*3*4*5$`
+Voy a complicarle la vida a MathJax: $$a_{ij}\times b_{ji};\ 1*2*3*4*5$$
 
 ### Probando highlight.js
 
