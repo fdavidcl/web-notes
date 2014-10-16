@@ -1,0 +1,47 @@
+\subsection{Gramaticas Regulares}\label{gramaticas-regulares}
+
+Una gramática regular derecha es aquella cuyas reglas de producción P
+son de la siguiente forma:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  A → a, donde A es un símbolo no-terminal en N y a uno terminal en
+  \(\Sigma\)\\
+\item
+  A → aB, donde A y B pertenecen a N y a pertenece a \(\Sigma\)\\
+\item
+  A → \(\epsilon\), donde A pertenece a N.
+\end{itemize}
+
+Análogamente, en una gramática regular izquierda, las reglas son de la
+siguiente forma:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  A → a, donde A es un símbolo no-terminal en N y a uno terminal en
+  \(\Sigma\)
+\item
+  A → Ba, donde A y B pertenecen a N y a pertenece a \(\Sigma\)\\
+\item
+  A → \(\epsilon\), donde A pertenece a N.
+\end{itemize}
+
+Nota : Si mezclamos reglas de una regular derecha y una regular
+izquierda lo que obtenemos\\sigue siendo una gramatica lineal pero no
+necesariamente una gramatica regular.
+
+Por ejemplo la gramatoca G con N = \{S, A\}, \(\Sigma\) = \{a, b\}, P
+con simbolo inicial S y reglas:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  S → aA\\
+\item
+  A → Sb\\
+\item
+  S → \(\epsion\)\\genera \(a^ib^i : i \geq 0\), que es un lenguaje
+  lineal no regular.
+\end{itemize}
